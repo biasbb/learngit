@@ -2,7 +2,7 @@
 
 - 首先要县创建一个版本库，里面所有的文件都可以被git管理，创建时选择一个合适的位置，创建一个空目录
 
-  >$ madir learngit
+  >$ mkdir learngit
 
   cd到这个目录下，用pwd命令可以显示当前目录，为/User/bias/learngit
 
