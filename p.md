@@ -1,3 +1,1 @@
-![](p.JPG)
-
-1
+![](../../Pictures/p.JPG)
