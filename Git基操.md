@@ -54,6 +54,8 @@
 
 - 用**git log**可以查看提交的日志**<u>(HEAD指针指向当前最新版本，版本更新就是改变HEAD的指向)</u>**git中用HEAD表示最新的版本，HEAD^表示上一个，HEAD^^表示上上个，多的话就用HEAD~3，表示上三个。
 
+  ![](image/image-20190531125450689.png)
+
 - 要回退到上一个版本就用**git reset**
 
   > $ git reset --hard HEAD^
