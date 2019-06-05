@@ -1,1 +1,3 @@
-![](/Users/bias/Git Repository/learngit/p.JPG)
+![](p.JPG)
+
+1
