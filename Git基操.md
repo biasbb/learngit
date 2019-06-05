@@ -48,7 +48,7 @@
 
 - 用git diff 小贴士.txt可以查看具体修改了什么内容
 
-  ![image-20190531124510793](/Users/bias/Library/Application Support/typora-user-images/image-20190531124510793.png)
+  ![](image/image-20190531124510793.png)
 
 ---
 
