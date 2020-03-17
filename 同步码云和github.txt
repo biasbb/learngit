@@ -1,0 +1,40 @@
+如何将git的修改同步提交到码云和github呢，通过修改本地库的隐藏目录.git中的config文件
+
+- ```c
+  [remote "origin"]
+  	url = git@github.com:biasbb/learngit.git
+  	fetch = +refs/heads/*:refs/remotes/origin/
+  ```
+
+  复制其中这三行然后把github.com改成gitee.com，同时给这个远程仓库取一个名字，例如gitee。
+
+- 下面的
+
+  ```c
+  [branch "master"]
+  	remote = origin
+  	merge = refs/heads/master
+  ```
+
+  不要动，也不要删除，不然push的时候得用git push gitee master，后面还得多输入一个master。不动这个的话直接输入git push gitee即可。
+
+- github远程仓库的名字如果不改的话默认就是origin，执行git push 就是默认往github里推送，如果修改的话，例如改成了github，那么推送的时候就要用git push github了。
+
+  > 最简单的就是进去复制三行，然后粘贴修改一个remote后面的码云远程仓库的名字即可。
+  >
+  > **但一般为了区别github和码云的远程仓库名，可以把码云的远程仓库命名为gitee，而github的改为github，这样推送的的时候便于区分。即只用该remote后面的两个名字和gitee的url即可，其他的都别动**。就像下面这样
+  >
+  > ```c
+  > [remote "github"]
+  > 	url = git@github.com:biasbb/test.git
+  > 	fetch = +refs/heads/*:refs/remotes/origin/*
+  > [remote "gitee"]
+  > 	url = git@gitee.com:biasbb/test.git
+  > 	fetch = +refs/heads/*:refs/remotes/origin/*
+  > [branch "master"]
+  > 	remote =origin
+  > 	merge = refs/heads/master
+  > ```
+
+
+
