@@ -1,3 +1,3 @@
 - untracked：未跟踪，即存在于工作区，没有加入到缓存区。需要git add到缓存区
 - staged：工作区的add到缓存区后变成这种状态
-- modified：加入到缓存区的文件
+- modified：加入到缓存区的文件哈
